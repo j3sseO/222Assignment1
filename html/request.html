@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What is a request?</title>
+        <link href="../highschoolwebdevelopment.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Outermost Div -->
+        <div class="outermost_div">
+            <div class="header">
+                <h1>Highschool Web Development</h1>
+            </div>
+            <!-- Left Div -->
+            <div class="left">
+                <!-- Menu to navigate site -->
+                <ul id="menu">
+                    <li id="menuoption"><a href="../index.html">What is HTTP and HTTPS?</a></li>
+                    <li id="menuoption"><a href="downloaded.html">How is a web page downloaded?</a></li>
+                    <li id="menuoption"><a href="request.html">What is a request?</a></li>
+                    <li id="menuoption"><a href="getandpost.html">When to use GET and POST?</a></li>
+                </ul>
+            </div>
+            
+            <!-- Middle Div -->
+            <div class="middle">
+                <h2>What is a request?</h2>
+                <p>
+                    A request or HTTP request is made by a client, to the server hosting the webpage. The purpose of the request
+                    is to access resources to load the webpage.
+                </p>
+                <p>
+                    A request to a server must include components of a URL. which contains the information needed to access
+                    the resource.
+                </p>
+                <p>
+                    A HTTP request contains the following elements:
+                </p>
+                <ul>
+                    <li>A request line.</li>
+                    <li>A series of HTTP headers or header fields.</li>
+                    <li>A message body, if requred.</li>
+                </ul>
+                <br>
+                <h3>Request Line</h3>
+                <p>
+                    The request line is the first line in the HTTP request. It consists of:
+                </p>
+                <ul>
+                    <!-- Uses span tag to bold text -->
+                    <li>
+                        1. A <span class="bold">method</span>. The method is one word that tells the server what to do with the resource.
+                        Some examples of HTTP methods are <span class="bold">GET, HEAD, POST, PUT</span>, and some others.
+                    </li>
+                    <li>
+                        2. The URL (path) for the request. The URL tells the server where the resource is stored.
+                    </li>
+                    <li>
+                        3. The HTTP version number. This tells the server what HTTP version the request is in.
+                    </li>
+                </ul>
+                <code>GET /images/screamingpig.png HTTP/1.1</code>
+                <p>
+                    Above is an example of of a request line.
+                </p>
+                <ul>
+                    <li>Uses the GET method</li>
+                    <li>The path to the resource is <span class="bold">/images/screamingpig.png</span>.</li>
+                    <li>Use the HTTP version HTTP/1.1</li>
+                </ul>
+                <br>
+                <h3>HTTP Header</h3>
+                <p>
+                    An HTTP header are used in an HTTP request to provide the server with information about the request,
+                    where it came from, and how communication should continue. A HTTP header is made up of a name and a value.
+                    The HTTP protocol specifications define the standard set of HTTP headers, and describes how to use them correctly.
+                </p>
+                <br>
+                <h3>Message Body</h3>
+                <p>
+                    Essentially, the message body is the actual content of the message. Message bodies are only required for some request
+                    methods and not others. For example, a request using the POST method, which sends input data to the server, has to have
+                    a message body containing the input data. However, a request that uses the GET method, which is requesting a resource,
+                    doesn't need to have a message body.
+                </p>
+                
+            </div>
+
+            <!-- Right Div -->
+            <div class="right">
+                <img 
+                    src="../images/httprequest.png" alt="HTTP Request Picture"/>
+            </div>
+
+            <div class="footer">
+                <p>Jesse OConnor - 1534760</p>
+            </div>
+            
+        </div>
+    
+    </body>
+</html>

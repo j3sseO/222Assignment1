@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How is a web page downloaded?</title>
+        <link href="../highschoolwebdevelopment.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Outermost Div -->
+        <div class="outermost_div">
+            <div class="header">
+                <h1>Highschool Web Development</h1>
+            </div>
+            <!-- Left Div -->
+            <div class="left">
+                <!-- Menu to navigate site -->
+                <ul id="menu">
+                    <li id="menuoption"><a href="../index.html">What is HTTP and HTTPS?</a></li>
+                    <li id="menuoption"><a href="downloaded.html">How is a web page downloaded?</a></li>
+                    <li id="menuoption"><a href="request.html">What is a request?</a></li>
+                    <li id="menuoption"><a href="getandpost.html">When to use GET and POST?</a></li>
+                </ul>
+            </div>
+            
+            <!-- Middle Div -->
+            <div class="middle">
+                <h2>How is a web page downloaded?</h2>
+                
+                <p>
+                    We are going to look at the process of downloading a website from www.timbrack.de.
+                </p>
+
+                <!-- Bulleted List -->
+                <ul>
+                    <li>
+                        <span class=bold>1 -</span> The webpage is initially requested for download from 
+                        <span class="bold">http://www.timbrack.de</span>. This is done using the GET method
+                        as seen in the right image. This is just grabbing the HTML for the webpage, not the 
+                        CSS styling.
+                    </li>
+                    <li>
+                        <span class="bold">2 -</span> The CSS file is then requested and downloaded from
+                        <span class="bold">http://www.timbrack.de/css/styles.ss</span>. This is vital for the
+                        formatting of the website. Without this, the website would be displaye linearly with
+                        default font etc.
+                    </li>
+                    <li>
+                        <span class="bold">3 -</span> Another CSS file is then requested from <span class="bold">
+                        http://www.timbrack.de/css/animate.css</span>. This CSS file is used for the animations of the 
+                        webpage.
+                    </li>
+                    <li>
+                        <span class="bold">4 -</span> The next 4 files that are requested are Javascript files. Javascript
+                        is an advanced programming language that makes web pages more interactive and dynamic.
+                    </li>
+                    <li>
+                        <span class="bold">5 -</span> The next file that is requested is an image file requested from
+                        <a href="http://www.timbrack.de/images/otto_sockenschwein.jpg"><span class="bold">http://www.timbrack.de/images/
+                        otto_sockenschwein.jpg</span></a> If you click on the link, you will be taken directly to the image
+                        where you can download it for yourself.
+                    </li>
+                    <li>
+                        <span class="bold">6 -</span> Another image file is then requested from <a href="http://www.timbrack.de/images/ewie_blitze.jpg">
+                        <span class="bold">http://www.timbrack.de/images/ewie_blitze.jpg</span></a>
+                    </li>
+                    <li>
+                        <span class="bold">7 -</span> Six more images are then requested for download to be used on the webpage.
+                    </li>
+                    <li>
+                        <span class="bold">8 -</span> A .woff file is then requested for download. This is a font file that is used to format
+                        text on the webpage.
+                    </li>
+                    <li>
+                        <span class="bold">9 -</span> An icon file is then requested for download. This is used as the webpage's icon which is seen
+                        at the start of the tab in a consumers web-browser.
+                    </li>
+                    <img src="../images/faviconexample.png" alt="Favicon Example">
+                    <li>
+                        This is the basic process of how a webpage is downloaded. Resources that are required for the website to load and
+                        be formatted correctly are individually requested and downloaded linearly.
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+            <!-- Right Div -->
+            <div class="right">
+                <p>
+                    <span class="bold">1.</span>
+                </p>
+                <img src="../images/initialrequest.png" id="annotations" alt="Initial Request Picture">
+                <p>
+                    <span class="bold">2.</span>
+                </p>
+                <img src="../images/stylecss.png" id = "annotations" alt="Style CSS Request">
+                <p>
+                    <span class="bold">3.</span>
+                </p>
+                <img src="../images/animatecss.png" id = "annotations" alt="Animate CSS Request">
+                <p>
+                    <span class="bold">4.</span>
+                </p>
+                <img src="../images/javascript.png" id = "annotations" alt="Javascript Requests">
+                <p>
+                    <span class="bold">5.</span>
+                </p>
+                <img src="../images/otto.png" id = "annotations" alt="First Image Request">
+                <p>
+                    <span class="bold">6.</span>
+                </p>
+                <img src="../images/ewie.png" id = "annotations" alt="Second Image Request">
+                <p>
+                    <span class="bold">7.</span>
+                </p>
+                <img src="../images/images.png" id = "annotations" alt="Other Image Requests">
+                <p>
+                    <span class="bold">8.</span>
+                </p>
+                <img src="../images/font.png" id = "annotations" alt="Font Request">
+                <p>
+                    <span class="bold">9.</span>
+                </p>
+                <img src="../images/faviconimage.png" id = "annotations" alt="Favicon Request">
+            </div>
+
+            <div class="footer">
+                <p>Jesse OConnor - 1534760</p>
+            </div>
+            
+        </div>
+    
+    </body>
+</html>
